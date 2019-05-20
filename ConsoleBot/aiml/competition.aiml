@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>笑话</pattern>
+    <template>
+      <joke />
+    </template>
+  </category>
+  <category>
+    <pattern>*笑话</pattern>
+    <template>
+      <joke />
+    </template>
+  </category>
+</aiml>

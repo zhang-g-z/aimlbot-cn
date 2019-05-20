@@ -1,0 +1,51 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>学生详细信息查询</pattern>
+    <template>详细信息查询：请输入要查询的学号</template>
+  </category>
+  <category>
+    <pattern>教职工详细信息查询</pattern>
+    <template>详细信息查询：请输入要查询的工号</template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>详细信息查询请输入要查询的学号</that>
+    <template>
+      <think>
+        <set name="mycardno">
+          <star index="1" />
+        </set>
+      </think>
+      <user get="detail" />
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>详细信息查询请输入要查询的工号</that>
+    <template>
+      <think>
+        <set name="mycardno">
+          <star index="1" />
+        </set>
+      </think>
+      <user get="detail" />
+    </template>
+  </category>
+  <category>
+    <pattern>用户信息查询</pattern>
+    <template>用户信息查询：请输入要查询的姓名</template>
+  </category>
+  <category>
+  <pattern>_</pattern>
+  <that>用户信息查询请输入要查询的姓名</that>
+  <template>
+    <think>
+      <set name="username">
+        <star index="1" />
+      </set>
+    </think>
+    <user get="list" />
+  </template>
+  </category>
+</aiml>

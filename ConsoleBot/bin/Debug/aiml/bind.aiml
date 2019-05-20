@@ -1,0 +1,70 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>绑定</pattern>
+    <template>
+      请输入您的学号或工号。
+    </template>
+  </category>
+  <category>
+    <pattern>*绑定</pattern>
+    <template>
+      请输入您的学号或工号。
+    </template>
+  </category>
+  <category>
+    <pattern>绑定*</pattern>
+    <template>
+      请输入您的学号或工号。
+    </template>
+  </category>
+  <category>
+    <pattern>*绑定*</pattern>
+    <template>
+      请输入您的学号或工号。
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>请输入您的学号或工号</that>
+    <template>
+      <think>
+        <set name="mycardno">
+          <star index="1" />
+        </set>
+      </think>
+      请输入您的手机号码。
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>请输入您的手机号码</that>
+    <template>
+      <think>
+        <set name="myphone">
+          <star index="1" />
+        </set>
+      </think>
+      请输入您的密码,默认密码为111111。
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>请输入您的密码默认密码为111111</that>
+    <template>
+      <think>
+        <set name="mypassword">
+          <star index="1" />
+        </set>
+      </think>
+      您的学号或工号:<get name="mycardno" />,手机号码:<get name="myphone" />,密码:<get name="mypassword" />,正确请回复是的，错误回复绑定重新绑定。
+    </template>
+  </category>
+  <category>
+    <pattern>是的</pattern>
+    <that>您的学号或工号*手机号码*密码*正确请回复是的错误回复绑定重新绑定</that>
+    <template>
+      <bind />
+    </template>
+  </category>
+</aiml>

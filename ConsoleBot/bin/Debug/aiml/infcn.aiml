@@ -1,0 +1,109 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>校外访问办理</pattern>
+    <template>校外访问办理：请输入您的身份证号码</template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>校外访问办理请输入您的身份证号码</that>
+    <template>
+      <think>
+        <set name="mycardid">
+          <star index="1" />
+        </set>
+      </think>
+      <infcn action="selfadd" />
+    </template>
+  </category>
+  <category>
+    <pattern>校外访问怎么办理</pattern>
+    <template>校外访问办理：请输入您的身份证号码</template>
+  </category>
+  <category>
+    <pattern>校外访问怎么开通</pattern>
+    <template>校外访问办理：请输入您的身份证号码</template>
+  </category>
+  <category>
+    <pattern>怎么开通校外访问</pattern>
+    <template>校外访问办理：请输入您的身份证号码</template>
+  </category>
+  <category>
+    <pattern>开通校外访问</pattern>
+    <template>校外访问办理：请输入您的身份证号码</template>
+  </category>
+  <category>
+    <pattern>我要开通校外访问</pattern>
+    <template>校外访问办理：请输入您的身份证号码</template>
+  </category>
+  <category>
+    <pattern>自助开通校外访问</pattern>
+    <template>校外访问办理：请输入您的身份证号码</template>
+  </category>
+  <category>
+    <pattern>校外访问开通</pattern>
+    <template>校外访问办理：请输入您的身份证号码</template>
+  </category>
+  <category>
+    <pattern>校外访问</pattern>
+    <template>您好，校外访问登录方法见图书馆主页左侧教师校外访问登录指南,如您还未办理校外访问请回复“怎么开通校外访问”</template>
+  </category>
+  <category>
+    <pattern>校外访问*</pattern>
+    <template>您好，校外访问登录方法见图书馆主页左侧教师校外访问登录指南,如您还未办理校外访问请回复“怎么开通校外访问”</template>
+  </category>
+  <category>
+    <pattern>*校外访问</pattern>
+    <template>您好，校外访问登录方法见图书馆主页左侧教师校外访问登录指南,如您还未办理校外访问请回复“怎么开通校外访问”</template>
+  </category>
+  <category>
+    <pattern>*校外访问*</pattern>
+    <template>您好，校外访问登录方法见图书馆主页左侧教师校外访问登录指南,如您还未办理校外访问请回复“怎么开通校外访问”</template>
+  </category>
+  <category>
+    <pattern>添加校外访问用户</pattern>
+    <template>校外访问办理：请输入要添加用户的工号</template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>校外访问办理请输入要添加用户的工号</that>
+    <template>
+      <think>
+        <set name="mycardno">
+          <star index="1" />
+        </set>
+      </think>
+      您输入的工号是<star index="1" />，您确定要为此工号办理吗？确定回复是的取消回复其它
+    </template>
+  </category>
+  <category>
+    <pattern>是的</pattern>
+    <that>您输入的工号是*您确定要为此工号办理吗确定回复是的取消回复其它</that>
+    <template>
+      <infcn action="add" />
+    </template>
+  </category>
+  <category>
+    <pattern>删除校外访问用户</pattern>
+    <template>校外访问办理：请输入要删除用户的工号</template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>校外访问办理请输入要删除用户的工号</that>
+    <template>
+      <think>
+        <set name="mycardno">
+          <star index="1" />
+        </set>
+      </think>
+      您输入的工号是<star index="1" />，您确定要删除此工号吗？确定回复是的取消回复其它
+    </template>
+  </category>
+  <category>
+    <pattern>是的</pattern>
+    <that>您输入的工号是*您确定要删除此工号吗确定回复是的取消回复其它</that>
+    <template>
+      <infcn action="delete" />
+    </template>
+  </category>
+</aiml>

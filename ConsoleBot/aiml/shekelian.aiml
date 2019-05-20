@@ -1,0 +1,75 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+<category>
+    <pattern>社科联账户开通</pattern>
+    <template>
+      社科联账户开通：请输入您的姓名。
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>社科联账户开通请输入您的姓名</that>
+    <template>
+      <think>
+        <set name="myusername">
+          <star index="1" />
+        </set>
+      </think>
+      社科联账户开通：请输入您的性别【男/女】。
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>社科联账户开通请输入您的性别*</that>
+    <template>
+      <think>
+        <set name="mysex">
+          <star index="1" />
+        </set>
+      </think>
+      社科联账户开通：请输入您的手机号码。
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>社科联账户开通请输入您的手机号码</that>
+    <template>
+      <think>
+        <set name="myphone">
+          <star index="1" />
+        </set>
+      </think>
+      社科联账户开通：请输入您的身份证号码。
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>社科联账户开通请输入您的身份证号码</that>
+    <template>
+      <think>
+        <set name="mycardid">
+          <star index="1" />
+        </set>
+      </think>
+      <infcn action="skladd" />
+    </template>
+  </category>
+  <category>
+    <pattern>社科联账户续约</pattern>
+    <template>
+      社科联账户续约：请输入您的手机号码。
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>社科联账户续约请输入您的手机号码</that>
+    <template>
+      <think>
+        <set name="myphone">
+          <star index="1" />
+        </set>
+      </think>
+      <infcn action="sklxy" />
+    </template>
+  </category>
+</aiml>

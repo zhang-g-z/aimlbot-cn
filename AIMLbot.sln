@@ -1,0 +1,32 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 2012
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AIMLbot", "AIMLbot\AIMLbot.csproj", "{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsoleBot", "ConsoleBot\ConsoleBot.csproj", "{AA13B5BF-9BE4-4F88-9EB2-E3CECE32CD17}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Tagx.Common", "Tagx.Common\Tagx.Common.csproj", "{715C7CDE-6A22-4A12-BB10-59ADADDF5C92}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{9C87D82C-0E27-4995-A2CB-72BCB84EF2E2}.Release|Any CPU.Build.0 = Release|Any CPU
+		{AA13B5BF-9BE4-4F88-9EB2-E3CECE32CD17}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{AA13B5BF-9BE4-4F88-9EB2-E3CECE32CD17}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{AA13B5BF-9BE4-4F88-9EB2-E3CECE32CD17}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{AA13B5BF-9BE4-4F88-9EB2-E3CECE32CD17}.Release|Any CPU.Build.0 = Release|Any CPU
+		{715C7CDE-6A22-4A12-BB10-59ADADDF5C92}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{715C7CDE-6A22-4A12-BB10-59ADADDF5C92}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{715C7CDE-6A22-4A12-BB10-59ADADDF5C92}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{715C7CDE-6A22-4A12-BB10-59ADADDF5C92}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal

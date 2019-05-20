@@ -1,0 +1,47 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>写日记</pattern>
+    <template>
+      请输入日记的标题。
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>请输入日记的标题</that>
+    <template>
+      请输入日记的内容。
+    </template>
+  </category>
+  <category>
+    <pattern>_</pattern>
+    <that>请输入日记的内容</that>
+    <template>
+      <think>
+        <set name="diarytitle">
+          <input index="1" />
+        </set>
+      </think>
+      确定要提交日记吗？请输入确定或取消。
+    </template>
+  </category>
+  <category>
+    <pattern>确定</pattern>
+    <that>确定要提交日记吗请输入确定或取消</that>
+    <template>
+      <think>
+        <set name="diarycontent">
+          <input index="1" />
+        </set>
+      </think>
+      <diary action="create" />
+    </template>
+  </category>
+  <category>
+    <pattern>取消</pattern>
+    <that>确定要提交日记吗请输入确定或取消</that>
+    <template>
+      谢谢您，您已经取消提交日记。
+    </template>
+  </category>
+</aiml>

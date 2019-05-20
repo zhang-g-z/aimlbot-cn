@@ -1,0 +1,111 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>我的余额</pattern>
+    <template>
+      您的余额为：<account get="balance" />
+  </template>
+  </category>
+  <category>
+    <pattern>我的余额*</pattern>
+    <template>
+      您的余额为：<account get="balance" />
+    </template>
+  </category>
+  <category>
+    <pattern>我的打印余额</pattern>
+    <template>
+      您的余额为：<account get="balance" />
+    </template>
+  </category>
+  <category>
+    <pattern>我的打印余额*</pattern>
+    <template>
+      您的余额为：<account get="balance" />
+    </template>
+  </category>
+  <category>
+    <pattern>充值历史</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/account/detail?CashType=%E5%85%85%E5%80%BC 。
+    </template>
+  </category>
+  <category>
+    <pattern>充值记录</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/account/detail?CashType=%E5%85%85%E5%80%BC 。
+    </template>
+  </category>
+  <category>
+    <pattern>我充值历史</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/account/detail?CashType=%E5%85%85%E5%80%BC 。
+    </template>
+  </category>
+  <category>
+    <pattern>我的充值记录</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/account/detail?CashType=%E5%85%85%E5%80%BC 。
+    </template>
+  </category>
+  <category>
+    <pattern>打印记录</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/account/detail?CashType=XabPrint 。
+    </template>
+  </category>
+  <category>
+    <pattern>扣费记录</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/account/detail?CashType=XabPrint 。
+    </template>
+  </category>
+  <category>
+    <pattern>消费记录</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/account/detail?CashType=XabPrint 。
+    </template>
+  </category>
+  <category>
+    <pattern>打印历史</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/account/detail?CashType=XabPrint 。
+    </template>
+  </category>
+  <category>
+    <pattern>入馆历史</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/entry 。
+    </template>
+  </category>
+  <category>
+    <pattern>入馆记录</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/entry 。
+    </template>
+  </category>
+  <category>
+    <pattern>到馆记录</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/entry 。
+    </template>
+  </category>
+  <category>
+    <pattern>到馆历史</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/entry 。
+    </template>
+  </category>
+  <category>
+    <pattern>进馆历史</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/entry 。
+    </template>
+  </category>
+  <category>
+    <pattern>进馆记录</pattern>
+    <template>
+      点击下面链接查看：http://library.gzife.edu.cn/mobie/entry 。
+    </template>
+  </category>
+</aiml>

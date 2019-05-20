@@ -1,0 +1,223 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<aiml>
+  <category>
+    <pattern>我借了多少本书</pattern>
+    <template>
+      您当前还有<book get="borrowcount" />本书没有还。
+    </template>
+  </category>
+  <category>
+    <pattern>我借了多少书</pattern>
+    <template>
+      您当前还有<book get="borrowcount" />本书没有还。
+    </template>
+  </category>
+  <category>
+    <pattern>我借了几本书</pattern>
+    <template>
+      您当前还有<book get="borrowcount" />本书没有还。
+    </template>
+  </category>
+  <category>
+    <pattern>我还有多少书没有还</pattern>
+    <template>
+      您当前还有<book get="borrowcount" />本书没有还。
+    </template>
+  </category>
+  <category>
+    <pattern>我有多少书没还</pattern>
+    <template>
+      您当前还有<book get="borrowcount" />本书没有还。
+    </template>
+  </category>
+  <category>
+    <pattern>我还有多少书没有有还</pattern>
+    <template>
+      您当前还有<book get="borrowcount" />本书没有还。
+    </template>
+  </category>
+  <category>
+    <pattern>我还有几本书没有还</pattern>
+    <template>
+      您当前还有<book get="borrowcount" />本书没有还。
+    </template>
+  </category>
+  <category>
+    <pattern>我还有几本书没还</pattern>
+    <template>
+      您当前还有<book get="borrowcount" />本书没有还。
+    </template>
+  </category>
+  <category>
+    <pattern>我借的书有哪些</pattern>
+    <template>
+      <book get="borrowdetails" />
+    </template>
+  </category>
+  <category>
+    <pattern>有哪些</pattern>
+    <that>您当前还有*本书没有还</that>
+    <template>
+      <book get="borrowdetails" />
+    </template>
+  </category>
+  <category>
+    <pattern>是哪些</pattern>
+    <that>您当前还有*本书没有还</that>
+    <template>
+      <book get="borrowdetails" />
+    </template>
+  </category>
+  <category>
+    <pattern>有什么</pattern>
+    <that>您当前还有*本书没有还</that>
+    <template>
+      <book get="borrowdetails" />
+    </template>
+  </category>
+  <category>
+    <pattern>是什么</pattern>
+    <that>您当前还有*本书没有还</that>
+    <template>
+      <book get="borrowdetails" />
+    </template>
+  </category>
+  <category>
+    <pattern>我借了什么书</pattern>
+    <template>
+      <book get="borrowdetails" />
+    </template>
+  </category>
+  <category>
+    <pattern>我借了哪些书</pattern>
+    <template>
+      <book get="borrowdetails" />
+    </template>
+  </category>
+  <category>
+    <pattern>借书明细</pattern>
+    <template>
+      <book get="borrowdetails" />
+    </template>
+  </category>
+  <category>
+    <pattern>图书分类</pattern>
+    <template>
+二楼A区:报刊阅览区
+二楼C区:大学基础学科
+三楼A区:经济计划与管理
+三楼C区:企业经济
+四楼A区:各行业经济
+四楼C区:财政金融
+五楼A区:自然科学类
+五楼C区:文教政法类
+六楼A区:历史、地理类
+六楼C区:人文社会科学类
+七楼A区:文学艺术类
+七楼C区:中国文学类主题图书
+八楼A区:外文、省情文献
+    </template>
+  </category>
+  <category>
+    <pattern>*图书分类</pattern>
+    <template>
+      <srai>图书分类</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>图书分类*</pattern>
+    <template>
+      <srai>图书分类</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>*图书分类*</pattern>
+    <template>
+      <srai>图书分类</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>分类</pattern>
+    <template>
+      <srai>图书分类</srai>
+    </template>
+  </category>
+  <category>
+    <pattern>检索</pattern>
+    <template>输入您要找的书名吧</template>
+  </category>
+  <category>
+    <pattern>*检索</pattern>
+    <template>输入您要找的书名吧</template>
+  </category>
+  <category>
+    <pattern>查书</pattern>
+    <template>输入您要找的书名吧</template>
+  </category>
+  <category>
+    <pattern>*查书</pattern>
+    <template>输入您要找的书名吧</template>
+  </category>
+  <category>
+    <pattern>找书</pattern>
+    <template>输入您要找的书名吧</template>
+  </category>
+  <category>
+    <pattern>*找书</pattern>
+    <template>输入您要找的书名吧</template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <that>输入您要找的书名吧</that>
+    <template>
+      <think>
+        <set name="bookname">
+          <star index="1" />
+        </set>
+      </think>
+      <book get="searchlist" />
+    </template>
+  </category>
+  <category>
+    <pattern>续借</pattern>
+    <template>
+      请输入您要续借书籍的条形码
+    </template>
+  </category>
+  <category>
+    <pattern>*</pattern>
+    <that>请输入您要续借书籍的条形码</that>
+    <template>
+      <think>
+        <set name="barcode">
+          <star index="1" />
+        </set>
+      </think>
+      <book action="renew" />
+    </template>
+  </category>
+  <category>
+    <pattern>借阅历史</pattern>
+    <template>
+      点击下面链接查看：http://library.gufe.edu.cn/mobie/borrow/history 。
+    </template>
+  </category>
+  <category>
+    <pattern>我的借阅历史</pattern>
+    <template>
+      点击下面链接查看：http://library.gufe.edu.cn/mobie/borrow/history 。
+    </template>
+  </category>
+  <category>
+    <pattern>借阅记录</pattern>
+    <template>
+      点击下面链接查看：http://library.gufe.edu.cn/mobie/borrow/history 。
+    </template>
+  </category>
+  <category>
+    <pattern>我的借阅记录</pattern>
+    <template>
+      点击下面链接查看：http://library.gufe.edu.cn/mobie/borrow/history 。
+    </template>
+  </category>
+</aiml>
